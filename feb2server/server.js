@@ -9,8 +9,12 @@ app.get("/", (req, res) => {
   res.json({ message: "hello" });
 });
 
-app.get("/:id", (req, res) => {});
+app.get("/page", (req, res) => {
+  res.json(data);
+});
 
 app.listen(port, () => {
   console.log(`server started at ${port}`);
 });
+
+const data = { num: 100 };
