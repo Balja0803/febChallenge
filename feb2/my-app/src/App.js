@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/page/:id" element={<Page />} />
       </Routes>
-      <Pagination />
+      <Pagination path="/page/:id" />
     </div>
   );
 }
